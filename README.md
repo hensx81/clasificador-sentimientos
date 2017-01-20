@@ -1,6 +1,6 @@
 <ul>
 <p>*****************************************************************************</p>
-<br>Escuela Politecnica Nacional</br>
+Escuela Politecnica Nacional
 Realizado por: Henry Pilco, Paul Pulgar y José Romero.
 Contact:
 Henry Pilco, hennry.pilco@epn.edu.ec
