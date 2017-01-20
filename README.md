@@ -1,11 +1,11 @@
 # Clasificador-sentimientos
-                         
-Diseño e Implementación de un sistema clasificador de sentimientos
- *****************************************************************************
+
+##Diseño e Implementación de un sistema clasificador de sentimientos
+* *****************************************************************************
 * Realizado por: Henry Pilco, Paul Pulgar y José Romero.
 *			Escuela Politecnica Nacional
 *
-* Contact: Henry Pilco, hennry.pilco@epn.edu.ec 
+* Contact: Henry Pilco, hennry.pilco@epn.edu.ec
 *          Paul Pulgar, paul.pulgar@epn.edu.ec
 *	   José Romero, jose.romero03@epn.edu.ec
 *****************************************************************************
@@ -21,20 +21,20 @@ Esta carpeta contiene opiniones de clientes de 5 productos.
 Todas las opiniones fueron tomadas de Amazon.com. Las mismas que fueron usadas
 como un conjunto de entrenamiento para crear nuestro clasificador de sentimientos.
 
-Símbolos usados en las opiniones: 
+Símbolos usados en las opiniones:
 
-  [t]: Título de la opinión: Cada tag [t] empieza una opinión. 
+  [t]: Título de la opinión: Cada tag [t] empieza una opinión.
 
 Proceso seguido.
 
 1. El punto de partida fue obtener opiniones de productos que nos puedan servir para crear nuestro set de entrenamiento.
    Después de tener los archivos con opiniones, procedimos a limpiar la información, obteniento los títulos de las opiniones que fueron
    los que nos sirvieron como insumo para crear el conjunto de entrenamiento. Por ejemplo:
-	1 incredibe price / performance . 
-	2 doesnt play new disney movies . 
-	3 poor quality - problem with dual-layer dvd 's . 
-	4 has destroyed several of my dvds and cds . 
-	5 their customer service sucks . 
+	1 incredibe price / performance .
+	2 doesnt play new disney movies .
+	3 poor quality - problem with dual-layer dvd 's .
+	4 has destroyed several of my dvds and cds .
+	5 their customer service sucks .
 2. Una vez que tuvimos las opiniones a evaluar, procedimos a clasificarlas segun nuestro criterio en: pos (positiva), neu (neutral), neg (negativa).
 	1 incredibe price / performance . pos
 	2 Works fine . pos
@@ -46,46 +46,46 @@ Proceso seguido.
 	   Este atributo nos permite determinar si existe alguno de los adjetivos positivos descritos, se encuentra en la opinión.
 	2. adjetivosN {Bad, Ugly, Sad, Sucks, Awful, Creepy, Defective, Erratic, Ambiguos, Lonely, Terrible, Worst, Frustrating, Null}
 	   Este atributo nos permite determinar si existe alguno de los adjetivos negativos descritos, se encuentra en la opinión.
-	3. emocionesP {Joy, Interest, Serenity, Hope, Gratitude, Kindness, Surprise, Confidence, Satisfaction, Ok, Noproblem, Null} 
+	3. emocionesP {Joy, Interest, Serenity, Hope, Gratitude, Kindness, Surprise, Confidence, Satisfaction, Ok, Noproblem, Null}
 	   Este atributo nos permite determinar si existe alguno de las emociones positivas descritas, se encuentra en la opinión.
 	4. emocionesN {Abusive, Agressive, Angry, Annoyed, Arrogant, Bored, Confused, Frustrated, Unhappy, Not, Poor, Problem, Destroyed, Crap, Null}
 	   Este atributo nos permite determinar si existe alguna de las emociones negativas descritas, se encuentra en la opinión.
 	5. sentimiento {pos, neg, neu}
 	   Este atributo determina la clasificación de la opinión.
-	   
+
 4. Después de determinar los atributos y la clase, procedimos a generar el conjunto de datos de entrenamiento. sentimientos_train.arff
 5. A continuación utilizamos la herramienta Weka para ejecutar nuestro modelo y validar su precisión.
 	Al utilizar el algoritmo de clasificación NaiveBayes y validación cruzada con un conjunto de 20 instancias se obtuvo los siguientes resultados.
 
-Correctly Classified Instances          13               65      %
-Incorrectly Classified Instances         7               35      %
-Kappa statistic                          0     
-Mean absolute error                      0.1861
-Root mean squared error                  0.334
-Relative absolute error                 53.2806 %
-Root relative squared error             80.5989 %
-Total Number of Instances               20     
+*Correctly Classified Instances          13               65      %
+*Incorrectly Classified Instances         7               35      %
+*Kappa statistic                          0     
+*Mean absolute error                      0.1861
+*Root mean squared error                  0.334
+*Relative absolute error                 53.2806 %
+*Root relative squared error             80.5989 %
+*Total Number of Instances               20     
 
 === Detailed Accuracy By Class ===
 
-TP Rate   FP Rate   Precision   Recall  F-Measure   Class
-  0         0          0         0         0        pos
-  1         1          0.65      1         0.788    neg
-  0         0          0         0         0        neu
-	Duplicamos las instancias y validamos los resultados.
+*TP Rate   FP Rate   Precision   Recall  F-Measure   Class
+*  0         0          0         0         0        pos
+*  1         1          0.65      1         0.788    neg
+*  0         0          0         0         0        neu
+*	Duplicamos las instancias y validamos los resultados.
 
-Correctly Classified Instances          36               90      %
-Incorrectly Classified Instances         4               10      %
-Kappa statistic                          0.7714
-Mean absolute error                      0.121 
-Root mean squared error                  0.2439
-Relative absolute error                 36.1277 %
-Root relative squared error             60.1201 %
-Total Number of Instances               40     
+*Correctly Classified Instances          36               90      %
+*Incorrectly Classified Instances         4               10      %
+*Kappa statistic                          0.7714
+*Mean absolute error                      0.121
+*Root mean squared error                  0.2439
+*Relative absolute error                 36.1277 %
+*Root relative squared error             60.1201 %
+*Total Number of Instances               40     
 
-=== Detailed Accuracy By Class ===
+*=== Detailed Accuracy By Class ===
 
-TP Rate   FP Rate   Precision   Recall  F-Measure   Class
+*TP Rate   FP Rate   Precision   Recall  F-Measure   Class
   0.833     0          1         0.833     0.909    pos
   1         0.286      0.867     1         0.929    neg
   0         0          0         0         0        neu
@@ -154,7 +154,7 @@ Preguntas.
 2. ¿Es importante el número de atributos (features) en el clasificador?
 	Según nuestras pruebas el clasificador mejoró mucho pasando de 2, 3 a 4 atributos para clasificar, y fue disminuyendo a medida que aumentamos más atributos.
 3. ¿Es importante el número de instancias?. ¿En qué casos?
-	El número de instancias es importante ya que si son muy pocas, la precisión va a ser baja, si son muchas va a existir sobrecarga. 
+	El número de instancias es importante ya que si son muy pocas, la precisión va a ser baja, si son muchas va a existir sobrecarga.
 4. ¿Es importante considerar diferentes pesos para cada atributo? ¿por qué?
 
 5. ¿Está su modelo sobreajustado overfitted?
