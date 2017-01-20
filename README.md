@@ -1,6 +1,5 @@
-# clasificador-sentimientos
-                            Archivo Readme
-
+# Clasificador-sentimientos
+                         
 Diseño e Implementación de un sistema clasificador de sentimientos
  *****************************************************************************
 * Realizado por: Henry Pilco, Paul Pulgar y José Romero.
