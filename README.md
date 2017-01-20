@@ -2,11 +2,11 @@
 
 ##Diseño e Implementación de un sistema clasificador de sentimientos
 
-** Realizado por: Henry Pilco, Paul Pulgar y José Romero.
-** Escuela Politecnica Nacional
-** Contact: Henry Pilco, hennry.pilco@epn.edu.ec
-**Paul Pulgar, paul.pulgar@epn.edu.ec
-**José Romero, jose.romero03@epn.edu.ec
+* Realizado por: Henry Pilco, Paul Pulgar y José Romero.
+* Escuela Politecnica Nacional
+* Contact: Henry Pilco, hennry.pilco@epn.edu.ec
+* Paul Pulgar, paul.pulgar@epn.edu.ec
+* José Romero, jose.romero03@epn.edu.ec
 
 Esta carpeta contiene opiniones de clientes de 5 productos.
 
@@ -66,58 +66,58 @@ Proceso seguido.
 
 === Detailed Accuracy By Class ===
 
-TP Rate   FP Rate   Precision   Recall  F-Measure   Class
-0           0           0         0         0       pos
-1           1         0.65        1       0.788     neg
-0           0           0         0         0       neu
-Duplicamos las instancias y validamos los resultados.
+== TP Rate   FP Rate   Precision   Recall  F-Measure   Class
+== 0           0           0         0         0       pos
+== 1           1         0.65        1       0.788     neg
+== 0           0           0         0         0       neu
+== Duplicamos las instancias y validamos los resultados.
 
-Correctly Classified Instances          36               90      %
-Incorrectly Classified Instances         4               10      %
-Kappa statistic                          0.7714
-Mean absolute error                      0.121
-Root mean squared error                  0.2439
-Relative absolute error                 36.1277 %
-Root relative squared error             60.1201 %
-Total Number of Instances               40     
-
-*=== Detailed Accuracy By Class ===
-
-*TP Rate   FP Rate   Precision   Recall  F-Measure   Class
-  0.833     0          1         0.833     0.909    pos
-  1         0.286      0.867     1         0.929    neg
-  0         0          0         0         0        neu
-
-Al utilizar el algoritmo de clasificación de arboles J48 se ve los resultados.
-
-Correctly Classified Instances          34               85      %
-Incorrectly Classified Instances         6               15      %
-Kappa statistic                          0.6429
-Mean absolute error                      0.1229
-Root mean squared error                  0.2795
-Relative absolute error                 36.6956 %
-Root relative squared error             68.911  %
-Total Number of Instances               40     
+* Correctly Classified Instances          36               90      %
+* Incorrectly Classified Instances         4               10      %
+* Kappa statistic                          0.7714
+* Mean absolute error                      0.121
+* Root mean squared error                  0.2439
+* Relative absolute error                 36.1277 %
+* Root relative squared error             60.1201 %
+* Total Number of Instances               40     
 
 === Detailed Accuracy By Class ===
 
-TP Rate   FP Rate   Precision   Recall  F-Measure   Class
-  0.667     0          1         0.667     0.8      pos
-  1         0.429      0.813     1         0.897    neg
-  0         0          0         0         0        neu
+* TP        Rate   FP Rate   Precision   Recall  F-Measure   Class
+*  0.833     0          1      0.833     0.909                pos
+*  1         0.286      0.867     1         0.929             neg
+*  0         0          0         0         0                 neu
+
+Al utilizar el algoritmo de clasificación de arboles J48 se ve los resultados.
+
+* Correctly Classified Instances          34               85      %
+* Incorrectly Classified Instances         6               15      %
+* Kappa statistic                          0.6429
+* Mean absolute error                      0.1229
+* Root mean squared error                  0.2795
+* Relative absolute error                 36.6956 %
+* Root relative squared error             68.911  %
+* Total Number of Instances               40     
+
+=== Detailed Accuracy By Class ===
+
+* TP Rate   FP Rate   Precision   Recall  F-Measure   Class
+*  0.667     0          1         0.667     0.8      pos
+*  1         0.429      0.813     1         0.897    neg
+*  0         0          0         0         0        neu
 
 Si ejecutamos el proceso anterios pero como dato Folds = 40 se obtiene:
 NaiveBayes
 
 
-Correctly Classified Instances          36               90      %
-Incorrectly Classified Instances         4               10      %
-Kappa statistic                          0.7714
-Mean absolute error                      0.12  
-Root mean squared error                  0.2395
-Relative absolute error                 35.3379 %
-Root relative squared error             58.1304 %
-Total Number of Instances               40     
+* Correctly Classified Instances          36               90      %
+* Incorrectly Classified Instances         4               10      %
+* Kappa statistic                          0.7714
+* Mean absolute error                      0.12  
+* Root mean squared error                  0.2395
+* Relative absolute error                 35.3379 %
+* Root relative squared error             58.1304 %
+* Total Number of Instances               40     
 
 === Detailed Accuracy By Class ===
 
