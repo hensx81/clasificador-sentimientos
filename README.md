@@ -2,13 +2,13 @@
 
 ##Diseño e Implementación de un sistema clasificador de sentimientos
 
-##Realizado por: Henry Pilco, Paul Pulgar y José Romero.
-##Escuela Politecnica Nacional
-##Contact: Henry Pilco, hennry.pilco@epn.edu.ec
-##Paul Pulgar, paul.pulgar@epn.edu.ec
-##José Romero, jose.romero03@epn.edu.ec
+###Realizado por: Henry Pilco, Paul Pulgar y José Romero.
+###Escuela Politecnica Nacional
+###Contact: Henry Pilco, hennry.pilco@epn.edu.ec
+###Paul Pulgar, paul.pulgar@epn.edu.ec
+###José Romero, jose.romero03@epn.edu.ec
 
-#Esta carpeta contiene opiniones de clientes de 5 productos.
+Esta carpeta contiene opiniones de clientes de 5 productos.
 
 	1. digital camera: Canon G3
 	2. digital camera: Nikon coolpix 4300
@@ -66,20 +66,20 @@ Total Number of Instances               20
 
 === Detailed Accuracy By Class ===
 
-*TP Rate   FP Rate   Precision   Recall  F-Measure   Class
-*  0         0          0         0         0        pos
-*  1         1          0.65      1         0.788    neg
-*  0         0          0         0         0        neu
-*	Duplicamos las instancias y validamos los resultados.
+TP Rate   FP Rate   Precision   Recall  F-Measure   Class
+0           0           0         0         0       pos
+1           1         0.65        1       0.788     neg
+0           0           0         0         0       neu
+Duplicamos las instancias y validamos los resultados.
 
-*Correctly Classified Instances          36               90      %
-*Incorrectly Classified Instances         4               10      %
-*Kappa statistic                          0.7714
-*Mean absolute error                      0.121
-*Root mean squared error                  0.2439
-*Relative absolute error                 36.1277 %
-*Root relative squared error             60.1201 %
-*Total Number of Instances               40     
+Correctly Classified Instances          36               90      %
+Incorrectly Classified Instances         4               10      %
+Kappa statistic                          0.7714
+Mean absolute error                      0.121
+Root mean squared error                  0.2439
+Relative absolute error                 36.1277 %
+Root relative squared error             60.1201 %
+Total Number of Instances               40     
 
 *=== Detailed Accuracy By Class ===
 
