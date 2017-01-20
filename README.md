@@ -181,3 +181,4 @@ TP Rate   FP Rate   Precision   Recall  F-Measure   Class
   1         0          1         1         1        neu
 
 8. ¿Es mejor utilizar validación cruzada (cross-validation) o un test dataset para realizar la evaluación del clasificardor? ¿Por qué?
+asd
