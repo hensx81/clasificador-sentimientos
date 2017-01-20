@@ -1,0 +1,9 @@
+@relation Sentimientos
+
+@attribute NN {yes,no}
+@attribute JJ {yes,no}
+@attribute IN {yes,no}
+@attribute VB_ {yes,no}
+@attribute expresion {positiva, negativa, neutro}
+
+@data
