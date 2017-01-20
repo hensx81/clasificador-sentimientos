@@ -1,14 +1,14 @@
 # Clasificador-sentimientos
 
 ##Diseño e Implementación de un sistema clasificador de sentimientos
-* *****************************************************************************
-* Realizado por: Henry Pilco, Paul Pulgar y José Romero.
-*			Escuela Politecnica Nacional
-*
-* Contact: Henry Pilco, hennry.pilco@epn.edu.ec
-*          Paul Pulgar, paul.pulgar@epn.edu.ec
-*	   José Romero, jose.romero03@epn.edu.ec
-*****************************************************************************
+
+Realizado por: Henry Pilco, Paul Pulgar y José Romero.
+			Escuela Politecnica Nacional
+
+ Contact: Henry Pilco, hennry.pilco@epn.edu.ec
+          Paul Pulgar, paul.pulgar@epn.edu.ec
+	   José Romero, jose.romero03@epn.edu.ec
+
 
 Esta carpeta contiene opiniones de clientes de 5 productos.
 
