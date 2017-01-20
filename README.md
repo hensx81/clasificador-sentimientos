@@ -1,12 +1,12 @@
 <ul>
-<p>*****************************************************************************</p>
+<p>*****************************************************************************
 Escuela Politecnica Nacional
 Realizado por: Henry Pilco, Paul Pulgar y José Romero.
 Contact:
 Henry Pilco, hennry.pilco@epn.edu.ec
 Paul Pulgar, paul.pulgar@epn.edu.ec
 José Romero, jose.romero03@epn.edu.ec
-<p>*****************************************************************************</p>
+*****************************************************************************</p>
 </ul>
 Archivo Readme
 <p>Esta carpeta contiene opiniones de clientes de 5 productos.</p>
