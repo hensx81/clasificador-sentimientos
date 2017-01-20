@@ -2,7 +2,7 @@
 * Realizado por: Henry Pilco, Paul Pulgar y José Romero.
 *			Escuela Politecnica Nacional
 *
-* Contact: Henry Pilco, hennry.pilco@epn.edu.ec 
+* Contact: Henry Pilco, hennry.pilco@epn.edu.ec
 *          Paul Pulgar, paul.pulgar@epn.edu.ec
 *	   José Romero, jose.romero03@epn.edu.ec
 *****************************************************************************
@@ -20,19 +20,19 @@ Esta carpeta contiene opiniones de clientes de 5 productos.
 Todas las opiniones fueron tomadas de Amazon.com. Las mismas que fueron usadas
 como un conjunto de entrenamiento para crear nuestro clasificador de sentimientos.
 
-Símbolos usados en las opiniones: 
+Símbolos usados en las opiniones:
 
-  [t]: Título de la opinión: Cada tag [t] empieza una opinión. 
+  [t]: Título de la opinión: Cada tag [t] empieza una opinión.
 
 Proceso seguido.
 1. El punto de partida fue obtener opiniones de productos que nos puedan servir para crear nuestro set de entrenamiento.
    Después de tener los archivos con opiniones, procedimos a limpiar la información, obteniento los títulos de las opiniones que fueron
    los que nos sirvieron como insumo para crear el conjunto de entrenamiento. Por ejemplo:
-	1 incredibe price / performance . 
-	2 doesnt play new disney movies . 
-	3 poor quality - problem with dual-layer dvd 's . 
-	4 has destroyed several of my dvds and cds . 
-	5 their customer service sucks . 
+	1 incredibe price / performance .
+	2 doesnt play new disney movies .
+	3 poor quality - problem with dual-layer dvd 's .
+	4 has destroyed several of my dvds and cds .
+	5 their customer service sucks .
 2. Una vez que tuvimos las opiniones a evaluar, procedimos a clasificarlas segun nuestro criterio en: pos (positiva), neu (neutral), neg (negativa).
 	1 incredibe price / performance . pos
 	2 Works fine . pos
@@ -44,7 +44,7 @@ Proceso seguido.
 	   Este atributo nos permite determinar si existe alguno de los adjetivos positivos descritos, se encuentra en la opinión.
 	2. adjetivosN {Bad, Ugly, Sad, Sucks, Awful, Creepy, Defective, Erratic, Ambiguos, Lonely, Terrible, Worst, Frustrating, Null}
 	   Este atributo nos permite determinar si existe alguno de los adjetivos negativos descritos, se encuentra en la opinión.
-	3. emocionesP {Joy, Interest, Serenity, Hope, Gratitude, Kindness, Surprise, Confidence, Satisfaction, Ok, Noproblem, Null} 
+	3. emocionesP {Joy, Interest, Serenity, Hope, Gratitude, Kindness, Surprise, Confidence, Satisfaction, Ok, Noproblem, Null}
 	   Este atributo nos permite determinar si existe alguno de las emociones positivas descritas, se encuentra en la opinión.
 	4. emocionesN {Abusive, Agressive, Angry, Annoyed, Arrogant, Bored, Confused, Frustrated, Unhappy, Not, Poor, Problem, Destroyed, Crap, Null}
 	   Este atributo nos permite determinar si existe alguna de las emociones negativas descritas, se encuentra en la opinión.
@@ -56,12 +56,12 @@ Proceso seguido.
 
 Correctly Classified Instances          13               65      %
 Incorrectly Classified Instances         7               35      %
-Kappa statistic                          0     
+Kappa statistic                          0
 Mean absolute error                      0.1861
 Root mean squared error                  0.3342
 Relative absolute error                 53.2806 %
 Root relative squared error             80.5989 %
-Total Number of Instances               20     
+Total Number of Instances               20
 
 === Detailed Accuracy By Class ===
 
@@ -74,11 +74,11 @@ TP Rate   FP Rate   Precision   Recall  F-Measure   Class
 Correctly Classified Instances          36               90      %
 Incorrectly Classified Instances         4               10      %
 Kappa statistic                          0.7714
-Mean absolute error                      0.121 
+Mean absolute error                      0.121
 Root mean squared error                  0.2439
 Relative absolute error                 36.1277 %
 Root relative squared error             60.1201 %
-Total Number of Instances               40     
+Total Number of Instances               40
 
 === Detailed Accuracy By Class ===
 
@@ -96,7 +96,7 @@ Mean absolute error                      0.1229
 Root mean squared error                  0.2795
 Relative absolute error                 36.6956 %
 Root relative squared error             68.911  %
-Total Number of Instances               40     
+Total Number of Instances               40
 
 === Detailed Accuracy By Class ===
 
@@ -112,11 +112,11 @@ NaiveBayes
 Correctly Classified Instances          36               90      %
 Incorrectly Classified Instances         4               10      %
 Kappa statistic                          0.7714
-Mean absolute error                      0.12  
+Mean absolute error                      0.12
 Root mean squared error                  0.2395
 Relative absolute error                 35.3379 %
 Root relative squared error             58.1304 %
-Total Number of Instances               40     
+Total Number of Instances               40
 
 === Detailed Accuracy By Class ===
 
@@ -135,7 +135,7 @@ Mean absolute error                      0.0964
 Root mean squared error                  0.2496
 Relative absolute error                 28.374  %
 Root relative squared error             60.5789 %
-Total Number of Instances               40     
+Total Number of Instances               40
 
 === Detailed Accuracy By Class ===
 
@@ -151,11 +151,12 @@ Preguntas.
 2. ¿Es importante el número de atributos (features) en el clasificador?
 	Según nuestras pruebas el clasificador mejoró mucho pasando de 2, 3 a 4 atributos para clasificar, y fue disminuyendo a medida que aumentamos más atributos.
 3. ¿Es importante el número de instancias?. ¿En qué casos?
-	El número de instancias es importante ya que si son muy pocas, la precisión va a ser baja, si son muchas va a existir sobrecarga. 
+	El número de instancias es importante ya que si son muy pocas, la precisión va a ser baja, si son muchas va a existir sobrecarga.
 4. ¿Es importante considerar diferentes pesos para cada atributo? ¿por qué?
-
+  Es muy importante porque evita que la distribución de probabilidad sea sesgada.
 5. ¿Está su modelo sobreajustado “overfitted”?
-
+   Luego de duplicar el número de instancias se observó overfitted en nuestro modelo, esto por que el clasificador Naive Bayes es sensible a las características
+   redundantes
 6. ¿Los atributos contínuos son mejores o peores en el clasificador Naive Bayes?
 	Son mejores.
 7. Comparar los diferentes algoritmos con su conjunto de datos y determinar cuál de ellos es el mejor.
@@ -163,12 +164,12 @@ Preguntas.
 
 Correctly Classified Instances          40              100      %
 Incorrectly Classified Instances         0                0      %
-Kappa statistic                          1     
+Kappa statistic                          1
 Mean absolute error                      0.0198
 Root mean squared error                  0.0937
 Relative absolute error                  5.8143 %
 Root relative squared error             22.7359 %
-Total Number of Instances               40     
+Total Number of Instances               40
 
 === Detailed Accuracy By Class ===
 
