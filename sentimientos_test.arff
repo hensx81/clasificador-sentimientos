@@ -1,0 +1,19 @@
+@relation sentimiento
+
+@attribute adjetivosP {Excellent, Good, Best, Glad, Cool, Great, Perfect, Pleased, Happy, Fantastic, Incredible, Better, Nice, Pretty, Null}
+@attribute adjetivosN {Bad, Ugly, Sad, Sucks, Awful, Creepy, Defective, Erratic, Ambiguos, Lonely, Terrible, Worst, Frustrating, Junk, Null}
+@attribute emocionesP {Joy, Interest, Serenity, Hope, Gratitude, Kindness, Surprise, Confidence, Satisfaction, Ok, Noproblem, Null} 
+@attribute emocionesN {Abusive, Agressive, Angry, Annoyed, Arrogant, Bored, Confused, Frustrated, Unhappy, Not, Poor, Problem, Destroyed, Failing, Crap, Null}
+@attribute sentimiento {pos, neg, neu}
+
+@data
+Null,Junk,Null,Null,?
+Null,Null,Poor,Not,?
+Null,Null,Null,Failing,?
+Best,Null,Null,Null,?
+Null,Null,Null,Null,?
+Best,Null,Null,Null,?
+Excellent,Null,Null,Null,?
+Null,Null,Null,Null,?
+Cool,Null,Null,Null,?
+Great,Null,Null,Null,?

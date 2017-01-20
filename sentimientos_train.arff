@@ -1,0 +1,49 @@
+@relation sentimiento
+
+@attribute adjetivosP {Excellent, Good, Best, Glad, Cool, Great, Perfect, Pleased, Happy, Fantastic, Incredible, Better, Nice, Pretty, Null}
+@attribute adjetivosN {Bad, Ugly, Sad, Sucks, Awful, Creepy, Defective, Erratic, Ambiguos, Lonely, Terrible, Worst, Frustrating, Null}
+@attribute emocionesP {Joy, Interest, Serenity, Hope, Gratitude, Kindness, Surprise, Confidence, Satisfaction, Ok, Noproblem, Null} 
+@attribute emocionesN {Abusive, Agressive, Angry, Annoyed, Arrogant, Bored, Confused, Frustrated, Unhappy, Not, Poor, Problem, Destroyed, Crap, Null}
+@attribute sentimiento {pos, neg, neu}
+
+@data
+Incredible,Null,Null,Null,pos
+Null,Null,Null,Not,neg
+Null,Null,Null,Poor,neg
+Null,Null,Null,Destroyed,neg
+Null,Sucks,Null,Null,neg
+Great,Null,Null,Null,pos
+Null,Null,Null,Not,neg
+Better,Null,Null,Null,pos
+Null,Null,Null,Crap,neg
+Null,Null,Noproblem,Null,pos
+Null,Null,Null,Not,neg
+Nice,Null,Null,Null,pos
+Null,Worst,Null,Null,neg
+Null,Null,Null,Not,neg
+Null,Null,Null,Problem,neg
+Null,Null,Null,Null,neu
+Null,Null,Null,Problem,neg
+Good,Null,Null,Null,pos
+Null,Null,Null,Poor,neg
+Null,Null,Null,Not,neg
+Incredible,Null,Null,Null,pos
+Null,Null,Null,Not,neg
+Null,Null,Null,Poor,neg
+Null,Null,Null,Destroyed,neg
+Null,Sucks,Null,Null,neg
+Great,Null,Null,Null,pos
+Null,Null,Null,Not,neg
+Better,Null,Null,Null,pos
+Null,Null,Null,Crap,neg
+Null,Null,Noproblem,Null,pos
+Null,Null,Null,Not,neg
+Nice,Null,Null,Null,pos
+Null,Worst,Null,Null,neg
+Null,Null,Null,Not,neg
+Null,Null,Null,Problem,neg
+Null,Null,Null,Null,neu
+Null,Null,Null,Problem,neg
+Good,Null,Null,Null,pos
+Null,Null,Null,Poor,neg
+Null,Null,Null,Not,neg

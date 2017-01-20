@@ -1,4 +1,4 @@
-==  Diseño e Implementación de un sistema clasificador de sentimientos
+== Diseño e Implementación de un sistema clasificador de sentimientos
 
 <ul>
 <p>*****************************************************************************</p>
