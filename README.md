@@ -3,11 +3,10 @@
 ##Diseño e Implementación de un sistema clasificador de sentimientos
 
 Realizado por: Henry Pilco, Paul Pulgar y José Romero.
-			Escuela Politecnica Nacional
-
- Contact: Henry Pilco, hennry.pilco@epn.edu.ec
-          Paul Pulgar, paul.pulgar@epn.edu.ec
-	   José Romero, jose.romero03@epn.edu.ec
+Escuela Politecnica Nacional
+Contact: Henry Pilco, hennry.pilco@epn.edu.ec
+Paul Pulgar, paul.pulgar@epn.edu.ec
+José Romero, jose.romero03@epn.edu.ec
 
 
 Esta carpeta contiene opiniones de clientes de 5 productos.
@@ -57,14 +56,14 @@ Proceso seguido.
 5. A continuación utilizamos la herramienta Weka para ejecutar nuestro modelo y validar su precisión.
 	Al utilizar el algoritmo de clasificación NaiveBayes y validación cruzada con un conjunto de 20 instancias se obtuvo los siguientes resultados.
 
-*Correctly Classified Instances          13               65      %
-*Incorrectly Classified Instances         7               35      %
-*Kappa statistic                          0     
-*Mean absolute error                      0.1861
-*Root mean squared error                  0.334
-*Relative absolute error                 53.2806 %
-*Root relative squared error             80.5989 %
-*Total Number of Instances               20     
+Correctly Classified Instances          13               65      %
+Incorrectly Classified Instances         7               35      %
+Kappa statistic                          0
+Mean absolute error                      0.1861
+Root mean squared error                  0.334
+Relative absolute error                 53.2806 %
+Root relative squared error             80.5989 %
+Total Number of Instances               20     
 
 === Detailed Accuracy By Class ===
 
