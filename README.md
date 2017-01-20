@@ -8,5 +8,5 @@
 <p>José Romero, jose.romero03@epn.edu.ec</p>
 <p>*****************************************************************************</p>
 </ul>
-Diseño e Implementación de un sistema clasificador de sentimientos
-Revisar Readme_2
+* Diseño e Implementación de un sistema clasificador de sentimientos
+* Revisar Readme_2
