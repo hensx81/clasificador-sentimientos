@@ -1,13 +1,11 @@
-<p>*****************************************************************************</p>
 <ul>
-<br>
-Realizado por: Henry Pilco, Paul Pulgar y José Romero.<br/>
-Escuela Politecnica Nacional
+<p>*****************************************************************************</p>
+<br>Escuela Politecnica Nacional</br>
+Realizado por: Henry Pilco, Paul Pulgar y José Romero.
 Contact:
 Henry Pilco, hennry.pilco@epn.edu.ec
 Paul Pulgar, paul.pulgar@epn.edu.ec
 José Romero, jose.romero03@epn.edu.ec
-<br />
 <p>*****************************************************************************</p>
 </ul>
 Archivo Readme
