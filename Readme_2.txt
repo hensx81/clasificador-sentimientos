@@ -158,8 +158,6 @@ Preguntas.
 
 5. ¿Está su modelo sobreajustado “overfitted”?
   Posiblemente
-  Luego de duplicar el número de instancias se observó overfitted en nuestro modelo, esto por que el clasificador Naive Bayes es sensible a las características
-  redundantes
 6. ¿Los atributos contínuos son mejores o peores en el clasificador Naive Bayes?
 	Son mejores.
 7. Comparar los diferentes algoritmos con su conjunto de datos y determinar cuál de ellos es el mejor.
