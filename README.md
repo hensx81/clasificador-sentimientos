@@ -9,4 +9,4 @@
 <p>*****************************************************************************</p>
 </ul>
 * Diseño e Implementación de un sistema clasificador de sentimientos
-* Revisar Readme_2
+* Para revisar los resultados, por favor revisar Readme_2.txt
