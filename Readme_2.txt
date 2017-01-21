@@ -183,3 +183,12 @@ TP Rate   FP Rate   Precision   Recall  F-Measure   Class
 del clasificardor? ¿Por qué?
 Cross-validation es mejor, ya que se puede mejorar la precisión del test de entrenamiento evaluando los datos propios. Ya que se saben de antemano las clasificaciones de las instancias.
 Los datos de prueba (test dataset) se utilizarían más en la obtención de resultados, ya que solo se podría teorizar acerca de la calidad del modelo.
+
+Conclusiones
+- Al realizar varias pruebas, creando mas de un modelo con varios atributos, pudimos ver que la precisión no variaba si el atributo no era relevante, es por eso que se descartaron atributos, tales como verbos y sujetos.
+
+- La clasificacion manual requiere muchos recursos tanto de personal como de tiempo. Y, al ser un entrenamiento supervisado, no es recomendable que sea totalmente automático. Por lo que se recomienda una mezcla de las dos técnicas.
+
+- La ubicación de las palabras es importante. La posición de una palabra afecta potencialmente en el sentido del significado de la oración. Para mejorar el set de training se pude hacer uso de n-gramas,tf-idf,etiquetas POS,teoría de la valoración (juicio, apreciación y efecto) para la definición de atributos. 
+
+- Los clasificadores tiene un algoritmo y un proposito por detras, por lo que su elección depende de las caracteristicas del modelo. Sin embargo, ejercitar el set de entrenamiento con varios clasificadores ayuda a afinar el mismo. Para nuestro modelo propuesto SMO fué el clasificador que mostró mejor desempeño en la clasificación.
