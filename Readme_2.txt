@@ -1,10 +1,10 @@
 *****************************************************************************
-* Realizado por: Henry Pilco, Paul Pulgar y JosÈ Romero.
+* Realizado por: Henry Pilco, Paul Pulgar y Jos√© Romero.
 *			Escuela Politecnica Nacional
 *
 * Contact: Henry Pilco, hennry.pilco@epn.edu.ec
 *          Paul Pulgar, paul.pulgar@epn.edu.ec
-*	   JosÈ Romero, jose.romero03@epn.edu.ec
+*	   Jos√© Romero, jose.romero03@epn.edu.ec
 *****************************************************************************
 
                             Archivo Readme
@@ -20,13 +20,13 @@ Esta carpeta contiene opiniones de clientes de 5 productos.
 Todas las opiniones fueron tomadas de Amazon.com. Las mismas que fueron usadas
 como un conjunto de entrenamiento para crear nuestro clasificador de sentimientos.
 
-SÌmbolos usados en las opiniones:
+S√≠mbolos usados en las opiniones:
 
-  [t]: TÌtulo de la opiniÛn: Cada tag [t] empieza una opiniÛn.
+  [t]: T√≠tulo de la opini√≥n: Cada tag [t] empieza una opini√≥n.
 
 Proceso seguido.
 1. El punto de partida fue obtener opiniones de productos que nos puedan servir para crear nuestro set de entrenamiento.
-   DespuÈs de tener los archivos con opiniones, procedimos a limpiar la informaciÛn, obteniento los tÌtulos de las opiniones que fueron
+   Despu√©s de tener los archivos con opiniones, procedimos a limpiar la informaci√≥n, obteniento los t√≠tulos de las opiniones que fueron
    los que nos sirvieron como insumo para crear el conjunto de entrenamiento. Por ejemplo:
 	1 incredibe price / performance .
 	2 doesnt play new disney movies .
@@ -39,20 +39,20 @@ Proceso seguido.
 	3 poor quality - problem with dual-layer dvd 's . neg
 	4 Nice product, bad sound . neu
 	5 their customer service sucks . neg
-3. A continuaciÛn procedimos a obtener los atributos que nos permitan clasificar las opiniones. Los atributos que para nuestro criterio fueron:
+3. A continuaci√≥n procedimos a obtener los atributos que nos permitan clasificar las opiniones. Los atributos que para nuestro criterio fueron:
 	1. adjetivosP {Excellent, Good, Best, Glad, Cool, Great, Perfect, Pleased, Happy, Fantastic, Incredible, Better, Nice, Null}
-	   Este atributo nos permite determinar si existe alguno de los adjetivos positivos descritos, se encuentra en la opiniÛn.
+	   Este atributo nos permite determinar si existe alguno de los adjetivos positivos descritos, se encuentra en la opini√≥n.
 	2. adjetivosN {Bad, Ugly, Sad, Sucks, Awful, Creepy, Defective, Erratic, Ambiguos, Lonely, Terrible, Worst, Frustrating, Null}
-	   Este atributo nos permite determinar si existe alguno de los adjetivos negativos descritos, se encuentra en la opiniÛn.
+	   Este atributo nos permite determinar si existe alguno de los adjetivos negativos descritos, se encuentra en la opini√≥n.
 	3. emocionesP {Joy, Interest, Serenity, Hope, Gratitude, Kindness, Surprise, Confidence, Satisfaction, Ok, Noproblem, Null}
-	   Este atributo nos permite determinar si existe alguno de las emociones positivas descritas, se encuentra en la opiniÛn.
+	   Este atributo nos permite determinar si existe alguno de las emociones positivas descritas, se encuentra en la opini√≥n.
 	4. emocionesN {Abusive, Agressive, Angry, Annoyed, Arrogant, Bored, Confused, Frustrated, Unhappy, Not, Poor, Problem, Destroyed, Crap, Null}
-	   Este atributo nos permite determinar si existe alguna de las emociones negativas descritas, se encuentra en la opiniÛn.
+	   Este atributo nos permite determinar si existe alguna de las emociones negativas descritas, se encuentra en la opini√≥n.
 	5. sentimiento {pos, neg, neu}
-	   Este atributo determina la clasificaciÛn de la opiniÛn.
-4. DespuÈs de determinar los atributos y la clase, procedimos a generar el conjunto de datos de entrenamiento. sentimientos_train.arff
-5. A continuaciÛn utilizamos la herramienta Weka para ejecutar nuestro modelo y validar su precisiÛn.
-	Al utilizar el algoritmo de clasificaciÛn NaiveBayes y validaciÛn cruzada con un conjunto de 20 instancias se obtuvo los siguientes resultados.
+	   Este atributo determina la clasificaci√≥n de la opini√≥n.
+4. Despu√©s de determinar los atributos y la clase, procedimos a generar el conjunto de datos de entrenamiento. sentimientos_train.arff
+5. A continuaci√≥n utilizamos la herramienta Weka para ejecutar nuestro modelo y validar su precisi√≥n.
+	Al utilizar el algoritmo de clasificaci√≥n NaiveBayes y validaci√≥n cruzada con un conjunto de 20 instancias se obtuvo los siguientes resultados.
 
 Correctly Classified Instances          13               65      %
 Incorrectly Classified Instances         7               35      %
@@ -87,7 +87,7 @@ TP Rate   FP Rate   Precision   Recall  F-Measure   Class
   1         0.286      0.867     1         0.929    neg
   0         0          0         0         0        neu
 
-Al utilizar el algoritmo de clasificaciÛn de arboles J48 se ve los resultados.
+Al utilizar el algoritmo de clasificaci√≥n de arboles J48 se ve los resultados.
 
 Correctly Classified Instances          34               85      %
 Incorrectly Classified Instances         6               15      %
@@ -146,21 +146,24 @@ TP Rate   FP Rate   Precision   Recall  F-Measure   Class
 
 Preguntas.
 
-1. øCu·ndo se alcanza la mejor precisiÛn?
-	La precisiÛn va mejorando a medida que el n˙mero de instancias del set de entrenamiento se acerca al n˙mero de atributos multiplicado por 10.
-2. øEs importante el n˙mero de atributos (features) en el clasificador?
-	Seg˙n nuestras pruebas el clasificador mejorÛ mucho pasando de 2, 3 a 4 atributos para clasificar, y fue disminuyendo a medida que aumentamos m·s atributos.
-3. øEs importante el n˙mero de instancias?. øEn quÈ casos?
-	El n˙mero de instancias es importante ya que si son muy pocas, la precisiÛn va a ser baja, si son muchas va a existir sobrecarga.
-4. øEs importante considerar diferentes pesos para cada atributo? øpor quÈ?
-  Es muy importante porque evita que la distribuciÛn de probabilidad sea sesgada.
-5. øEst· su modelo sobreajustado ìoverfittedî?
-   Luego de duplicar el n˙mero de instancias se observÛ overfitted en nuestro modelo, esto por que el clasificador Naive Bayes es sensible a las caracterÌsticas
-   redundantes
-6. øLos atributos contÌnuos son mejores o peores en el clasificador Naive Bayes?
+1. ¬øCu√°ndo se alcanza la mejor precisi√≥n?
+	La precisi√≥n va mejorando a medida que el n√∫mero de instancias del set de entrenamiento se acerca al n√∫mero de atributos multiplicado por 10.
+2. ¬øEs importante el n√∫mero de atributos (features) en el clasificador?
+	Seg√∫n nuestras pruebas el clasificador mejor√≥ mucho pasando de 2, 3 a 4 atributos para clasificar, y fue disminuyendo a medida que aumentamos m√°s atributos.
+3. ¬øEs importante el n√∫mero de instancias?. ¬øEn qu√© casos?
+	El n√∫mero de instancias es importante ya que si son muy pocas, la precisi√≥n va a ser baja, si son muchas va a existir sobrecarga.
+4. ¬øEs importante considerar diferentes pesos para cada atributo? ¬øpor qu√©?
+    Depende del clasificador: Unos usan los pesos y otros no.
+    En caso de usar pesos. El uso ser√≠a el de favorecer a un atributo sobre el resto de ellos.
+
+5. ¬øEst√° su modelo sobreajustado ‚Äúoverfitted‚Äù?
+  Posiblemente
+  Luego de duplicar el n√∫mero de instancias se observ√≥ overfitted en nuestro modelo, esto por que el clasificador Naive Bayes es sensible a las caracter√≠sticas
+  redundantes
+6. ¬øLos atributos cont√≠nuos son mejores o peores en el clasificador Naive Bayes?
 	Son mejores.
-7. Comparar los diferentes algoritmos con su conjunto de datos y determinar cu·l de ellos es el mejor.
-	DespuÈs de utilizar diferentes algoritmos determinamos que con el algoritmo VFI se encontrÛ una mejor precisiÛn.
+7. Comparar los diferentes algoritmos con su conjunto de datos y determinar cu√°l de ellos es el mejor.
+	Despu√©s de utilizar diferentes algoritmos determinamos que con el algoritmo VFI se encontr√≥ una mejor precisi√≥n.
 
 Correctly Classified Instances          40              100      %
 Incorrectly Classified Instances         0                0      %
@@ -178,5 +181,7 @@ TP Rate   FP Rate   Precision   Recall  F-Measure   Class
   1         0          1         1         1        neg
   1         0          1         1         1        neu
 
-8. øEs mejor utilizar validaciÛn cruzada (cross-validation) o un test dataset para realizar la evaluaciÛn
-del clasificardor? øPor quÈ?
+8. ¬øEs mejor utilizar validaci√≥n cruzada (cross-validation) o un test dataset para realizar la evaluaci√≥n
+del clasificardor? ¬øPor qu√©?
+Cross-validation es mejor, ya que se puede mejorar la precisi√≥n del test de entrenamiento evaluando los datos propios. Ya que se saben de antemano las clasificaciones de las instancias.
+Los datos de prueba (test dataset) se utilizar√≠an m√°s en la obtenci√≥n de resultados, ya que solo se podr√≠a teorizar acerca de la calidad del modelo.
